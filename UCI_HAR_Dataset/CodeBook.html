@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>CodeBook for tidyData.txt</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>CodeBook for tidyData.txt</h1>
+
+<p>##Descriptions of 89 variables in the tidyData.txt</p>
+
+<p>##Variables [1] to [3] are used to identify the average results of 30 subjects with 6 activities. The total observations are 180 rows for this data set.</p>
+
+<p>[1] &ldquo;subject&rdquo; 
+ The subject is who performed the activity for each window sample. Its range is from 1 to 30. </p>
+
+<p>[2] &ldquo;activity&rdquo;<br/>
+ The names of the activities that each person performed, including WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.</p>
+
+<p>[3] &ldquo;y&rdquo; 
+ The ID links the class labels with their activity name.</p>
+
+<p>##Variables [4] to [56] are reflecting the average value of each subject and activity combination of the mean measurements of the testing/training results</p>
+
+<p>[4] &ldquo;tbodyacc.mean&hellip;x&rdquo;<br/>
+ [5] &ldquo;tbodyacc.mean&hellip;y&rdquo;<br/>
+ [6] &ldquo;tbodyacc.mean&hellip;z&rdquo;<br/>
+ [7] &ldquo;tgravityacc.mean&hellip;x&rdquo;<br/>
+ [8] &ldquo;tgravityacc.mean&hellip;y&rdquo;<br/>
+ [9] &ldquo;tgravityacc.mean&hellip;z&rdquo;<br/>
+[10] &ldquo;tbodyaccjerk.mean&hellip;x&rdquo;<br/>
+[11] &ldquo;tbodyaccjerk.mean&hellip;y&rdquo;<br/>
+[12] &ldquo;tbodyaccjerk.mean&hellip;z&rdquo;<br/>
+[13] &ldquo;tbodygyro.mean&hellip;x&rdquo;<br/>
+[14] &ldquo;tbodygyro.mean&hellip;y&rdquo;<br/>
+[15] &ldquo;tbodygyro.mean&hellip;z&rdquo;<br/>
+[16] &ldquo;tbodygyrojerk.mean&hellip;x&rdquo;<br/>
+[17] &ldquo;tbodygyrojerk.mean&hellip;y&rdquo;<br/>
+[18] &ldquo;tbodygyrojerk.mean&hellip;z&rdquo;<br/>
+[19] &ldquo;tbodyaccmag.mean..&rdquo;<br/>
+[20] &ldquo;tgravityaccmag.mean..&rdquo;<br/>
+[21] &ldquo;tbodyaccjerkmag.mean..&rdquo;<br/>
+[22] &ldquo;tbodygyromag.mean..&rdquo;<br/>
+[23] &ldquo;tbodygyrojerkmag.mean..&rdquo;<br/>
+[24] &ldquo;fbodyacc.mean&hellip;x&rdquo;<br/>
+[25] &ldquo;fbodyacc.mean&hellip;y&rdquo;<br/>
+[26] &ldquo;fbodyacc.mean&hellip;z&rdquo;<br/>
+[27] &ldquo;fbodyacc.meanfreq&hellip;x&rdquo;<br/>
+[28] &ldquo;fbodyacc.meanfreq&hellip;y&rdquo;<br/>
+[29] &ldquo;fbodyacc.meanfreq&hellip;z&rdquo;<br/>
+[30] &ldquo;fbodyaccjerk.mean&hellip;x&rdquo;<br/>
+[31] &ldquo;fbodyaccjerk.mean&hellip;y&rdquo;<br/>
+[32] &ldquo;fbodyaccjerk.mean&hellip;z&rdquo;<br/>
+[33] &ldquo;fbodyaccjerk.meanfreq&hellip;x&rdquo;<br/>
+[34] &ldquo;fbodyaccjerk.meanfreq&hellip;y&rdquo;<br/>
+[35] &ldquo;fbodyaccjerk.meanfreq&hellip;z&rdquo;<br/>
+[36] &ldquo;fbodygyro.mean&hellip;x&rdquo;<br/>
+[37] &ldquo;fbodygyro.mean&hellip;y&rdquo;<br/>
+[38] &ldquo;fbodygyro.mean&hellip;z&rdquo;<br/>
+[39] &ldquo;fbodygyro.meanfreq&hellip;x&rdquo;<br/>
+[40] &ldquo;fbodygyro.meanfreq&hellip;y&rdquo;<br/>
+[41] &ldquo;fbodygyro.meanfreq&hellip;z&rdquo;<br/>
+[42] &ldquo;fbodyaccmag.mean..&rdquo;<br/>
+[43] &ldquo;fbodyaccmag.meanfreq..&rdquo;<br/>
+[44] &ldquo;fbodybodyaccjerkmag.mean..&rdquo;<br/>
+[45] &ldquo;fbodybodyaccjerkmag.meanfreq..&rdquo;<br/>
+[46] &ldquo;fbodybodygyromag.mean..&rdquo;<br/>
+[47] &ldquo;fbodybodygyromag.meanfreq..&rdquo;<br/>
+[48] &ldquo;fbodybodygyrojerkmag.mean..&rdquo;<br/>
+[49] &ldquo;fbodybodygyrojerkmag.meanfreq..&rdquo;<br/>
+[50] &ldquo;angle.tbodyaccmean.gravity.&rdquo;<br/>
+[51] &ldquo;angle.tbodyaccjerkmean..gravitymean.&rdquo;
+[52] &ldquo;angle.tbodygyromean.gravitymean.&rdquo;<br/>
+[53] &ldquo;angle.tbodygyrojerkmean.gravitymean.&rdquo;
+[54] &ldquo;angle.x.gravitymean.&rdquo;<br/>
+[55] &ldquo;angle.y.gravitymean.&rdquo;<br/>
+[56] &ldquo;angle.z.gravitymean.&rdquo;  </p>
+
+<p>##Variables [57] to [89] are reflecting the average value of each subject and activity combination of the stand deviation measurements of the testing/training results</p>
+
+<p>[57] &ldquo;tbodyacc.std&hellip;x&rdquo;<br/>
+[58] &ldquo;tbodyacc.std&hellip;y&rdquo;<br/>
+[59] &ldquo;tbodyacc.std&hellip;z&rdquo;<br/>
+[60] &ldquo;tgravityacc.std&hellip;x&rdquo;<br/>
+[61] &ldquo;tgravityacc.std&hellip;y&rdquo;<br/>
+[62] &ldquo;tgravityacc.std&hellip;z&rdquo;<br/>
+[63] &ldquo;tbodyaccjerk.std&hellip;x&rdquo;<br/>
+[64] &ldquo;tbodyaccjerk.std&hellip;y&rdquo;<br/>
+[65] &ldquo;tbodyaccjerk.std&hellip;z&rdquo;<br/>
+[66] &ldquo;tbodygyro.std&hellip;x&rdquo;<br/>
+[67] &ldquo;tbodygyro.std&hellip;y&rdquo;<br/>
+[68] &ldquo;tbodygyro.std&hellip;z&rdquo;<br/>
+[69] &ldquo;tbodygyrojerk.std&hellip;x&rdquo;<br/>
+[70] &ldquo;tbodygyrojerk.std&hellip;y&rdquo;<br/>
+[71] &ldquo;tbodygyrojerk.std&hellip;z&rdquo;<br/>
+[72] &ldquo;tbodyaccmag.std..&rdquo;<br/>
+[73] &ldquo;tgravityaccmag.std..&rdquo;<br/>
+[74] &ldquo;tbodyaccjerkmag.std..&rdquo;<br/>
+[75] &ldquo;tbodygyromag.std..&rdquo;<br/>
+[76] &ldquo;tbodygyrojerkmag.std..&rdquo;<br/>
+[77] &ldquo;fbodyacc.std&hellip;x&rdquo;<br/>
+[78] &ldquo;fbodyacc.std&hellip;y&rdquo;<br/>
+[79] &ldquo;fbodyacc.std&hellip;z&rdquo;<br/>
+[80] &ldquo;fbodyaccjerk.std&hellip;x&rdquo;<br/>
+[81] &ldquo;fbodyaccjerk.std&hellip;y&rdquo;<br/>
+[82] &ldquo;fbodyaccjerk.std&hellip;z&rdquo;<br/>
+[83] &ldquo;fbodygyro.std&hellip;x&rdquo;<br/>
+[84] &ldquo;fbodygyro.std&hellip;y&rdquo;<br/>
+[85] &ldquo;fbodygyro.std&hellip;z&rdquo;<br/>
+[86] &ldquo;fbodyaccmag.std..&rdquo;<br/>
+[87] &ldquo;fbodybodyaccjerkmag.std..&rdquo;<br/>
+[88] &ldquo;fbodybodygyromag.std..&rdquo;<br/>
+[89] &ldquo;fbodybodygyrojerkmag.std..&rdquo;   </p>
+
+</body>
+
+</html>
+
